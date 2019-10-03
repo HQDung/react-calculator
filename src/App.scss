@@ -1,0 +1,57 @@
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  flex: 1;
+}
+
+.screen {
+  border: 4px solid gray;
+  font-size: 34px;
+  text-align: right;
+  padding: 10px;
+  width: 280px;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.keys-container {
+  width: 280px;
+  .button {
+    &:first-child, &:last-child {
+      width: 130px;
+    }
+  }
+  &:after {
+    display: block;
+    clear: both;
+    content: " ";
+  }
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  color: #fff;
+  background: gray;
+  line-height: 60px;
+  text-align: center;
+  float: left;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  &.function-btn {
+    background: #e58212;
+  }
+}
