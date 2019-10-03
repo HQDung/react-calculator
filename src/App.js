@@ -74,7 +74,7 @@ function App() {
           setState({...INIT_STATE, result})
         break;
       case BTN_TYPE.PERCENTAGE_TRANSFORM:
-          const updatedNumber = convertToPercentage(operator ? secondNumber : firstNumber);
+          const updatedNumber = convertToPercentage(res);
           setState({...state, result: updatedNumber, ...operator ? {secondNumber: updatedNumber} : {firstNumber: updatedNumber}});
         break;
       default:
